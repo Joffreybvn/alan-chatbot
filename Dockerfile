@@ -21,7 +21,7 @@ WORKDIR /opt/app
 RUN pip install -r requirements.txt
 
 # Install SpaCy small model
-RUN python -m spacy download en_core_web_sm
+# RUN python -m spacy download en_core_web_sm
 
 # Start the app.
 ENTRYPOINT [ "python" ]
